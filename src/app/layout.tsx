@@ -162,7 +162,7 @@ export default function RootLayout({
                     </div>
                 </header>
 
-                {/* <MatrixCanvas className="absolute w-full h-full z-0" /> */}
+                <MatrixCanvas className="absolute w-full h-full z-0" />
                 {children}
                 <footer className="bg-gray-900 text-gray-400 py-8">
                     <div className="container mx-auto px-4">

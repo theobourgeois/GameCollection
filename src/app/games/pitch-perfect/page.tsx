@@ -1,7 +1,5 @@
 import { games } from "@/app/content/games";
 import PitchPerfect from "./_components/pitch-perfect";
-import { ExternalLink } from "lucide-react";
-import Link from "next/link";
 
 const pitchPerfect = games.find((game) => game.slug === "pitch-perfect")!;
 

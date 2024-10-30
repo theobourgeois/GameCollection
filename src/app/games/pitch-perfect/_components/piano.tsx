@@ -211,6 +211,7 @@ function useKeyHandler(
             key?.removeEventListener("mousedown", handleMouseDown);
             key?.removeEventListener("mouseup", handleMouseUp);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [keyRef]);
 
     useEffect(() => {

@@ -21,9 +21,13 @@ import {
 } from "@/components/ui/select";
 import { SelectItem } from "@radix-ui/react-select";
 
-const audioContext = new AudioContext();
+let audioContext: AudioContext | null = null;
+if (typeof window !== "undefined") {
+    audioContext = new AudioContext();
+}
 
 const playNote = (randomNote: Note | null) => {
+    if (!audioContext) return;
     if (!randomNote) return;
     const oscillator = audioContext.createOscillator();
     const freq = getNoteFrequency(randomNote, 4);

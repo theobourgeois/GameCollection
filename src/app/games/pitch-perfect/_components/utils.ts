@@ -1,7 +1,10 @@
 
 import Soundfont from "soundfont-player";
 
-export const audioContext = new AudioContext();
+export let audioContext: AudioContext;
+if (typeof window !== "undefined") {
+  audioContext = new AudioContext();
+}
 let player: Soundfont.Player | null = null;
 
 async function initInstrument() {

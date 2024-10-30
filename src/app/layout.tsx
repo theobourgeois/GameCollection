@@ -151,12 +151,12 @@ export default function RootLayout({
                                 >
                                     Games
                                 </Link>
-                                <Link
+                                {/* <Link
                                     href="https://theobourgeois.com"
                                     className="hover:text-cyan-400 transition-colors"
                                 >
                                     Donate
-                                </Link>
+                                </Link> */}
                             </div>
                         </nav>
                     </div>

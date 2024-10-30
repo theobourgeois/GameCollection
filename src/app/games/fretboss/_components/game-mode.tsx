@@ -62,6 +62,7 @@ export function GameMode() {
     useEffect(() => {
         handleSelectRandomFretAndString();
         handleSelectRandomNote();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleSelectRandomFretAndString = () => {

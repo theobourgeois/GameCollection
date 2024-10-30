@@ -1,4 +1,3 @@
-import Link from "next/link";
 import FretBoss from "./_components/fretboss";
 import { games } from "@/app/content/games";
 
@@ -23,11 +22,12 @@ export default function Homepage() {
                     </h2>
                     <p className="text-lg text-gray-300 leading-relaxed">
                         Ever felt lost trying to find notes on your guitar?
-                        You're not alone. Whether you're just starting out or
-                        looking to level up your playing, understanding the
-                        fretboard is your key to musical freedom. That's exactly
-                        why we built FretBoss – your personal guide to mastering
-                        the guitar fretboard, one note at a time.
+                        You&apos;re not alone. Whether you&apos;re just starting
+                        out or looking to level up your playing, understanding
+                        the fretboard is your key to musical freedom.
+                        That&apos;s exactly why we built FretBoss – your
+                        personal guide to mastering the guitar fretboard, one
+                        note at a time.
                     </p>
                 </div>
 
@@ -42,12 +42,12 @@ export default function Homepage() {
                                 🎯 Place Notes Mode
                             </h4>
                             <p className="text-gray-300">
-                                Think of it as a musical treasure hunt! We'll
-                                give you a note, and your mission is to find
-                                every occurrence of it on the fretboard. It's
-                                like connecting the dots, but with notes –
-                                perfect for building that crucial mental map of
-                                your guitar neck.
+                                Think of it as a musical treasure hunt!
+                                We&apos;ll give you a note, and your mission is
+                                to find every occurrence of it on the fretboard.
+                                It&apos;s like connecting the dots, but with
+                                notes – perfect for building that crucial mental
+                                map of your guitar neck.
                             </p>
                         </div>
 
@@ -57,11 +57,11 @@ export default function Homepage() {
                             </h4>
                             <p className="text-gray-300">
                                 Ready for a challenge? You pick how many notes
-                                you want to tackle, and we'll put random
+                                you want to tackle, and we&apos;ll put random
                                 unmarked notes on the fretboard. Your job? Name
-                                that note! It's like flashcards for your guitar,
-                                but way more fun. Start with a few notes and
-                                work your way up as you get more confident.
+                                that note! It&apos;s like flashcards for your
+                                guitar, but way more fun. Start with a few notes
+                                and work your way up as you get more confident.
                             </p>
                         </div>
 
@@ -70,12 +70,13 @@ export default function Homepage() {
                                 🎼 Interval Training Mode
                             </h4>
                             <p className="text-gray-300">
-                                Here's where things get interesting! We'll show
-                                you a note and an interval, and you'll need to
-                                figure out where you'll land. It's like musical
-                                math, but don't worry – with practice, it
-                                becomes second nature. This is your fast track
-                                to understanding how scales and melodies work
+                                Here&apos;s where things get interesting!
+                                We&apos;ll show you a note and an interval, and
+                                you&apos;ll need to figure out where you&apos;ll
+                                land. It&apos;s like musical math, but
+                                don&apos;t worry – with practice, it becomes
+                                second nature. This is your fast track to
+                                understanding how scales and melodies work
                                 across the fretboard.
                             </p>
                         </div>

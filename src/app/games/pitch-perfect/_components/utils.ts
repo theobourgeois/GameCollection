@@ -12,6 +12,7 @@ initInstrument();
 type CreateStyles = { [key: string]: React.CSSProperties }
 export const createStyles =
   <T extends CreateStyles>(style: T) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     (): T => {
       return style as T;
     };

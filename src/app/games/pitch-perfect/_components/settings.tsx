@@ -7,7 +7,7 @@ export function Settings() {
 
     return (
         <div className="flex items-center flex-col gap-4">
-            <div className="flex items-center gap-2">
+            <div className="grid gap-2 grid-cols-1 sm:grid-cols-3 md:grid-cols-5">
                 {Object.values(Difficulty).map((currDifficulty) => (
                     <DifficultyButton
                         key={currDifficulty}

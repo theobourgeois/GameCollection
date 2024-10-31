@@ -15,7 +15,7 @@ import GameContainer from "@/components/game-container";
 export default function FretBoss() {
     const { gameMode, setGameMode, setNotes, setGuesses } = useGuitarState();
     return (
-        <GameContainer className="gap-2">
+        <GameContainer className="gap-2 h-max">
             <p className="font-semibold text-2xl mb-1">Select game mode:</p>
             <Select
                 onValueChange={(value) => {
@@ -25,7 +25,7 @@ export default function FretBoss() {
                 }}
                 value={gameMode}
             >
-                <SelectTrigger className="w-max">
+                <SelectTrigger className="w-max relative z-20">
                     <SelectValue placeholder="Select game mode" />
                 </SelectTrigger>
                 <SelectContent>

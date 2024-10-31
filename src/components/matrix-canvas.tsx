@@ -38,7 +38,8 @@ function render(ctx: CanvasRenderingContext2D, width: number, height: number) {
     const cols = Math.floor(width / FONT_SIZE);
     ctx.clearRect(0, 0, width, height);
 
-    if (listOfLetters.length === 0) {
+    if (listOfLetters.length === 0 || cols !== listOfLetters.length) {
+        listOfLetters.length = 0;
         for (let i = 0; i < cols; i++) {
             listOfLetters[i] = [];
             columnAlphas[i] = Math.random();
@@ -107,7 +108,11 @@ export default function MatrixCanvas({
                 if (ctx) {
                     canvasRef.current.width = window.innerWidth;
                     canvasRef.current.height = window.innerHeight;
-                    render(ctx, window.innerWidth, window.innerHeight);
+                    render(
+                        ctx,
+                        canvasRef.current.width,
+                        canvasRef.current.height
+                    );
                 }
             }
         };

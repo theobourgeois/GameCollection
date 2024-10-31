@@ -14,7 +14,7 @@ const GameContainer = ({
             <div className="absolute inset-0 bg-gradient-to-br from-blue-950/90 via-indigo-950/90 to-gray-950/90 animate-gradient-slow" />
 
             {/* Decorative elements */}
-            <div className="absolute inset-0 overflow-hidden z-0">
+            <div className="absolute inset-0 overflow-hidden ">
                 {/* Top left corner accent */}
                 <div className="absolute -top-24 -left-24 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl" />
                 {/* Bottom right corner accent */}

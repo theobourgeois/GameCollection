@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { calculateNextGuessNotes } from "./utils";
 import { Difficulty, difficultyData, useStore } from "./state";
+import { Button } from "@/components/ui/button";
 
 export function Settings() {
     const { difficulty, streak } = useStore();
@@ -53,7 +54,7 @@ function DifficultyButton({
     };
 
     return (
-        <button
+        <Button
             onClick={handleChange}
             className={cn(
                 "text-white font-semibold px-4 py-2 rounded-md flex items-center gap-1",
@@ -64,6 +65,6 @@ function DifficultyButton({
         >
             <div>{emoji}</div>
             {difficulty}
-        </button>
+        </Button>
     );
 }

@@ -18,8 +18,8 @@ import {
     SelectContent,
     SelectTrigger,
     SelectValue,
+    SelectItem,
 } from "@/components/ui/select";
-import { SelectItem } from "@radix-ui/react-select";
 
 let audioContext: AudioContext | null = null;
 if (typeof window !== "undefined") {
@@ -249,7 +249,6 @@ export function GameMode() {
                                 Select interval to guess
                             </label>
                             <Select
-                                name="interval"
                                 value={setInterval?.toString() || "random"}
                                 onValueChange={(value) => {
                                     if (value === "random") {
